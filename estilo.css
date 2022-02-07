@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Space+Mono&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: #000
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.contenedor {
+    width: 600px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    overflow: hidden;
+}
+.producto {
+    width: 440px;
+    height: 550px;
+    perspective: 1000px;
+}
+.productoInterno {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+.productoFront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transform: translateZ(25px);
+}
+.productoTop {
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(#0794a6, #9bae07);
+    color: #fff;
+}
+.productoTop h1 {
+    font-size: 130px;
+    margin-left: 20px;
+    font-style: italic;
+    opacity: 0.3;
+}
+.productoBtn {
+    padding: 50px 30px;
+}
+.productoBtn p {
+    font-size: 12px;
+}
+.productoBtn h2 {
+    margin-bottom: 35px;
+    color: #008394;
+    letter-spacing: 1px;
+}
+.productoBtn h1 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 5px;
+}
+.productoBtn h1 span {
+    color: #008394;
+}
+.productoBtn button {
+    padding: 9px 25px;
+    background: transparent;
+    color: #008394;
+    border: 1px solid #008394;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+}
+.productoBtn button:hover {
+    border: 1px solid #9cd8f480;
+    color: #000;
+    background: #9cd8f480;
+    transition: all 800ms;
+}
+.selecColor {
+    display: flex;
+    float: right;
+    margin-top: -10px;
+}
+.selecItem {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    padding: 5px;
+    box-shadow: -5px 0 8px 2px rgba(156, 216, 244, 0.5);
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+.selecItem img {
+    width: 80%;
+    padding-top: 10%;
+}
+.selecItem:hover {
+    background: rgba(156, 216, 244, 0.5);
+    box-shadow: none;
+    transition: all 500ms;
+}
+.productoTop2 {
+    background: linear-gradient(#c370fd, #3be1b8);
+}
+.productoBack {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #fff;
+    transform: translateZ(-25px) rotateY(180deg);
+}
+.ladoIzq, .ladoDer {
+    width: 50px;
+    height: 100%;
+    background: #fff;
+    transform: rotateY(90deg);
+    position: absolute;
+    top: 0;
+    left: -25px;
+}
+.ladoDer {
+    transform: rotateY(-90deg);
+    left: auto;
+    right: -25px;
+}
+.frontImg {
+    width: 340px;
+    top: 70px;
+    left: 20px;
+    position: absolute;
+    transform: translateZ(50px);
+    transition: 1s;
+    z-index: 100;
+}
+.frontImg:hover {
+    width: 360px;
+}
+.backImg {
+    width: 340px;
+    top: 70px;
+    left: -1000px;
+    position: absolute;
+    transform: translateZ(50px) rotate(-30deg);
+    transition: 1s;
+    z-index: 100;
+}
+.backImg:hover {
+    width: 360px;
+}
