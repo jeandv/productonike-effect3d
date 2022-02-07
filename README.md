@@ -1,2 +1,2 @@
 # productonike-effect3d
-Diseño/efecto 3D de producto nike, CSS y JavaScript vanilla.
+Diseño y efecto de volteo 3D de producto nike, CSS y JavaScript vanilla.
