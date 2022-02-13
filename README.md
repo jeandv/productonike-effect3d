@@ -1,5 +1,5 @@
 # productonike-effect3d
-Diseño y efecto de volteo y desplazamiento 3D de producto nike, CSS y JavaScript vanilla.
+Diseño y efecto de volteo y desplazamiento 3D de producto nike, CSS y JavaScript.
 
 - Resultado: https://jeandv.github.io/productonike-effect3d/
 
